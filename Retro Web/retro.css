@@ -1,0 +1,55 @@
+/* 1. Kill ALL rounded corners and fancy shadows */
+* {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+}
+
+/* 2. Force a white background and Times New Roman font */
+html, body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: "Times New Roman", serif !important;
+}
+
+/* 3. The "Jumble Fixer": Stop elements from floating or being side-by-side */
+div, section, header, footer, nav, aside, article, form {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    clear: both !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 5px 0 !important;
+    padding: 2px !important;
+    border: 1px solid #ccc !important; /* Optional: adds a thin wireframe look */
+}
+
+/* 4. Fix those oval search bars and buttons */
+input, button, select, textarea {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border: 2px inset #999 !important; /* Makes buttons look old-school 3D */
+    background: #eee !important;
+    border-radius: 0 !important;
+    padding: 2px !important;
+}
+
+/* 5. Classic Blue/Purple Links */
+a {
+    color: #0000EE !important;
+    text-decoration: underline !important;
+}
+a:visited {
+    color: #551A8B !important;
+}
+
+/* 6. Prevent images from breaking the layout */
+img, video {
+    display: block !important;
+    max-width: 200px !important;
+    height: auto !important;
+    border: 1px solid black !important;
+}

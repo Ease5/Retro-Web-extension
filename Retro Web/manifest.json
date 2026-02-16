@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Retro Web",
+  "version": "2.0",
+  "description": "This Chromium extension strips away CSS to make the web look like the 1990s for those who are feeling retro vibes!",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["retro.css"]
+    }
+  ]
+}
