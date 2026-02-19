@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  /* The container - size of the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The background of the switch */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #060735; /* Black when off */
+  border: 1px solid #000;
+  transition: .2s;
+}
+
+/* The moving part (the knob) */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 2px;
+  background-color: #5a5a59; /* Nokia Green knob */
+  transition: .2s;
+}
+
+/* When the box is checked (ON state) */
+input:checked + .slider {
+  background-color: #060631; /* Darker green background */
+}
+
+/* Move the knob to the right when checked */
+input:checked + .slider:before {
+  transform: translateX(20px);
+  background-color: #ffffff;
+}
+  </style>
+</head>
+<body>
+  <h2>Menu</h2>
+
+  <div class="toggle-container">
+    <span>RETRO MODE:</span>
+    <label class="switch">
+    <input type="checkbox" id="powerToggle" checked>
+    <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="link-section">
+    <a href="https://youtube.com/@mongusmab" target="_blank">> YOUTUBE</a>
+    <a href="https://github.com/ease5" target="_blank">> GITHUB</a>
+    <a href="https://discord.com/users/1447997990722736249" target="_blank">> DISCORD</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmMk8bhwPwvu52bdIk3I36r5sODWoUggKB3c0e1H4vsbZInQ/viewform?usp=header" target="_blank">> FEEDBACK</a>
+    <a href="https://sites.google.com/view/retro-web-extension" target="_blank">> WEBSITE</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
